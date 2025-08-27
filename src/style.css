@@ -1,0 +1,27 @@
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+}
+nav li {
+  margin: 5px;
+}
+nav a {
+  padding: 5px 10px;
+  background: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 3px;
+}
+nav a:hover {
+  background: #0056b3;
+}
+
+section {
+  margin: 20px 0;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
