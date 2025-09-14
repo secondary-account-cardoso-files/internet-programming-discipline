@@ -319,7 +319,6 @@ window.editUser = function (index) {
   const clientes = JSON.parse(localStorage.getItem("clientes") || "[]");
   const cliente = clientes[index];
   if (!cliente) return;
-  // Preenche o formulário de cadastro com os dados do usuário
   loadPage("cadastro.html");
   setTimeout(() => {
     const form = document.getElementById("cadastroForm");
@@ -332,11 +331,8 @@ window.editUser = function (index) {
       form.cidade.value = cliente.cidade;
       form.estado.value = cliente.estado;
       form.dataNascimento.value = cliente.dataNascimento;
-      // Ao salvar, substitui o usuário
       form.onsubmit = function (e) {
         e.preventDefault();
-        // ...validação igual ao cadastro...
-        // Limpa erros
         [
           "nomeError",
           "cpfError",
@@ -350,8 +346,6 @@ window.editUser = function (index) {
           const el = document.getElementById(id);
           if (el) el.textContent = "";
         });
-
-        // Coleta dados
         const nome = form.nome.value.trim();
         const cpf = form.cpf.value.trim();
         const cep = form.cep.value.trim();
@@ -360,7 +354,6 @@ window.editUser = function (index) {
         const cidade = form.cidade.value.trim();
         const estado = form.estado.value.trim();
         const dataNascimento = form.dataNascimento.value.trim();
-
         let valid = true;
         if (!nome) {
           document.getElementById("nomeError").textContent =
@@ -402,8 +395,6 @@ window.editUser = function (index) {
           valid = false;
         }
         if (!valid) return;
-
-        // Atualiza cliente
         clientes[index] = {
           nome,
           cpf,
@@ -437,7 +428,6 @@ window.alugarLivro = function (index) {
 };
 
 function renderLivrosPage() {
-  // Dados dos livros
   const livros = [
     {
       titulo: "Algoritmos e Lógica de Programação",
@@ -500,21 +490,15 @@ function renderLivrosPage() {
       lancamento: "2010",
     },
   ];
-
-  // Recupera usuário selecionado
   const clientes = JSON.parse(localStorage.getItem("clientes") || "[]");
   const clienteIndex = localStorage.getItem("clienteSelecionado");
   const usuario = clientes[clienteIndex];
-
-  // Exibe usuário
   const usuarioDiv = document.getElementById("livros-usuario");
   if (usuarioDiv) {
     usuarioDiv.innerHTML = usuario
       ? `Usuário: <strong>${usuario.nome}</strong> (${usuario.cpf})`
       : "Usuário não identificado.";
   }
-
-  // Renderiza tabela de livros
   function renderLivros() {
     const tbody = document.querySelector("#livros-table tbody");
     if (!tbody) return;
@@ -533,8 +517,6 @@ function renderLivrosPage() {
       `;
     });
   }
-
-  // Função para alugar livro
   window.alugarLivroParaUsuario = function (livroIndex) {
     if (!usuario) return alert("Usuário não identificado.");
     const alugados = JSON.parse(localStorage.getItem("livrosAlugados") || "[]");
@@ -551,8 +533,6 @@ function renderLivrosPage() {
     renderRelatorio();
     alert(`Livro "${livros[livroIndex].titulo}" alugado para ${usuario.nome}!`);
   };
-
-  // Relatório de livros alugados
   function renderRelatorio() {
     const relatorioDiv = document.getElementById("relatorio-alugados");
     if (!relatorioDiv) return;
@@ -588,7 +568,83 @@ function renderLivrosPage() {
     html += `</tbody></table>`;
     relatorioDiv.innerHTML = html;
   }
-
   renderLivros();
   renderRelatorio();
 }
+// Renderiza tabela de livros
+function renderLivros() {
+  const tbody = document.querySelector("#livros-table tbody");
+  if (!tbody) return;
+  tbody.innerHTML = "";
+  livros.forEach((livro, i) => {
+    tbody.innerHTML += `
+        <tr>
+          <td>${livro.titulo}</td>
+          <td>${livro.autor}</td>
+          <td>${livro.categoria}</td>
+          <td>${livro.lancamento}</td>
+          <td>
+            <button class="action-btn rent-btn" onclick="alugarLivroParaUsuario(${i})">Alugar</button>
+          </td>
+        </tr>
+      `;
+  });
+}
+
+// Função para alugar livro
+window.alugarLivroParaUsuario = function (livroIndex) {
+  if (!usuario) return alert("Usuário não identificado.");
+  const alugados = JSON.parse(localStorage.getItem("livrosAlugados") || "[]");
+  alugados.push({
+    usuario: usuario.nome,
+    cpf: usuario.cpf,
+    livro: livros[livroIndex].titulo,
+    autor: livros[livroIndex].autor,
+    categoria: livros[livroIndex].categoria,
+    lancamento: livros[livroIndex].lancamento,
+    data: new Date().toLocaleDateString(),
+  });
+  localStorage.setItem("livrosAlugados", JSON.stringify(alugados));
+  renderRelatorio();
+  alert(`Livro "${livros[livroIndex].titulo}" alugado para ${usuario.nome}!`);
+};
+
+// Relatório de livros alugados
+function renderRelatorio() {
+  const relatorioDiv = document.getElementById("relatorio-alugados");
+  if (!relatorioDiv) return;
+  const alugados = JSON.parse(localStorage.getItem("livrosAlugados") || "[]");
+  if (alugados.length === 0) {
+    relatorioDiv.innerHTML = "<p>Nenhum livro alugado.</p>";
+    return;
+  }
+  let html = `<table class="users-table">
+      <thead>
+        <tr>
+          <th>Usuário</th>
+          <th>CPF</th>
+          <th>Livro</th>
+          <th>Autor</th>
+          <th>Categoria</th>
+          <th>Lançamento</th>
+          <th>Data do Aluguel</th>
+        </tr>
+      </thead>
+      <tbody>`;
+  alugados.forEach((a) => {
+    html += `<tr>
+        <td>${a.usuario}</td>
+        <td>${a.cpf}</td>
+        <td>${a.livro}</td>
+        <td>${a.autor}</td>
+        <td>${a.categoria}</td>
+        <td>${a.lancamento}</td>
+        <td>${a.data}</td>
+      </tr>`;
+  });
+  html += `</tbody></table>`;
+  relatorioDiv.innerHTML = html;
+}
+
+renderLivros();
+renderRelatorio();
