@@ -1,5 +1,13 @@
 # Trabalho 1 — Tecnologias para Internet
 
+<div align="center">
+
+![Programação Para a Internet](https://img.shields.io/badge/Programação%20Para%20a%20Internet-Atividade%2001-0078D4?style=for-the-badge&logo=azuredevops)
+
+[⬅️ Voltar ao README Principal](../README.md)
+
+</div>
+
 ## Introdução
 
 As **Tecnologias para Internet** compõem o conjunto de recursos, protocolos, ferramentas e linguagens que possibilitam a comunicação digital em rede. Elas são responsáveis por sustentar desde páginas web estáticas até sistemas distribuídos complexos em nuvem. O estudo dessas tecnologias é essencial para compreender como a web evoluiu e continua a moldar a sociedade contemporânea.
@@ -49,3 +57,9 @@ As tecnologias para internet evoluem constantemente e afetam diretamente a forma
 - Flanagan, D. (2020). _JavaScript: The Definitive Guide_. O'Reilly Media.
 - Freeman, E., & Robson, E. (2011). _Head First HTML and CSS_. O'Reilly Media.
 - Tanenbaum, A. S. (2011). _Computer Networks_. Pearson Education.
+
+<div align="center">
+
+[⬅️ Voltar ao README Principal](../../README.md)
+
+</div>
