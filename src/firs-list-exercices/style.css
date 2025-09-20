@@ -269,3 +269,58 @@ html {
   vertical-align: sub;
   font-size: 0.6em;
 }
+.exercise03 table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.exercise03 th,
+.exercise03 td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+.exercise03 th {
+  background-color: #f2f2f2;
+  color: #222;
+}
+.exercise03 tr:nth-child(even) {
+  background-color: #5b5b5b;
+  color: #fff;
+}
+
+/* Regras para colorir notas com base no valor */
+.exercise03 td:nth-child(2), /* Nota do Trabalho */
+.exercise03 td:nth-child(3) {
+  /* Nota da Prova */
+  font-weight: bold;
+}
+
+/* Classes para notas baixas (< 6) */
+.exercise03 .nota-baixa {
+  color: #ff4444 !important;
+}
+
+/* Classes para notas altas (>= 6) */
+.exercise03 .nota-alta {
+  color: #22aa22 !important;
+}
+.exercise03 td:nth-child(3):has-text("4") {
+  color: #ff4444 !important;
+}
+
+/* Notas >= 6 = verde */
+/* .exercise03 td:nth-child(2):has-text("5"),
+.exercise03 td:nth-child(2):has-text("6"),
+.exercise03 td:nth-child(2):has-text("7"),
+.exercise03 td:nth-child(2):has-text("8"),
+.exercise03 td:nth-child(2):has-text("9"),
+.exercise03 td:nth-child(2):has-text("10"),
+.exercise03 td:nth-child(3):has-text("5"),
+.exercise03 td:nth-child(3):has-text("6"),
+.exercise03 td:nth-child(3):has-text("7"),
+.exercise03 td:nth-child(3):has-text("8"),
+.exercise03 td:nth-child(3):has-text("9"),
+.exercise03 td:nth-child(3):has-text("10") {
+  color: #22aa22 !important;
+  background-color: #e6ffe6 !important;
+} */
