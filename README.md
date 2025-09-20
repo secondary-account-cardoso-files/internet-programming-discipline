@@ -1,6 +1,19 @@
-# Disciplina: Programação para a Internet
+# 🌐 Programação para a Internet - Unitri
 
-## Curso: Análise e Desenvolvimento de Sistemas
+<div align="center">
+
+![Programação para a Internet](https://img.shields.io/badge/Programação%20para%20a%20Internet-Unitri-0078D4?style=for-the-badge&logo=azuredevops)
+![Disciplina](https://img.shields.io/badge/Disciplina-ADS-4B8BBE?style=for-the-badge&logo=github)
+![Professora](https://img.shields.io/badge/Prof-Luciene%20Chagas%20de%20Oliveira-FFCA28?style=for-the-badge&logo=linkedin)
+
+**Instituição:** [Unitri](https://unitri.edu.br)  
+**Curso:** Análise e Desenvolvimento de Sistemas  
+**Disciplina:** Programação para a Internet  
+**Professora:** [Luciene Chagas de Oliveira, Ph.D](https://www.linkedin.com/in/luciene-chagas-de-oliveira-ph-d-b21b3b31/)
+
+Este repositório contém meus estudos, anotações e exercícios realizados durante a disciplina de Programação para a Internet. O objetivo é registrar o progresso ao longo do semestre, facilitando a inclusão de novos conteúdos conforme as aulas avançam.
+
+</div>
 
 ---
 
@@ -121,6 +134,12 @@ Este material é um resumo completo e estruturado baseado no conteúdo da aula "
 - Eclipse (HTML e Java)
 - Notepad++
 
+<div align="right">
+
+[⬆️ Voltar ao topo](#menu-de-navegação)
+
+</div>
+
 ---
 
 ## O que HTML NÃO é?
@@ -128,6 +147,12 @@ Este material é um resumo completo e estruturado baseado no conteúdo da aula "
 - **Linguagem de Programação:** Não acessa banco de dados
 - **Não é Case Sensitive:** Não diferencia maiúsculas e minúsculas
 - **Não permite conteúdo dinâmico:** O dinamismo é fornecido por outras linguagens como JavaScript, PHP, ASP, Java, .NET, etc.
+
+<div align="right">
+
+[⬆️ Voltar ao topo](#menu-de-navegação)
+
+</div>
 
 ---
 
@@ -139,6 +164,12 @@ As marcações são **TAGS**, consistindo no sinal de menor que (`<`) seguido pe
 
 - `<title>Título</title>`: Especifica um título do documento
 - `<br>`: Salta uma linha (não precisa ser fechada)
+
+<div align="right">
+
+[⬆️ Voltar ao topo](#menu-de-navegação)
+
+</div>
 
 ---
 
@@ -157,6 +188,12 @@ Todo documento HTML inicia e finaliza com `<html></html>`, possui uma área de c
   </body>
 </html>
 ```
+
+<div align="right">
+
+[⬆️ Voltar ao topo](#menu-de-navegação)
+
+</div>
 
 ---
 
@@ -199,6 +236,12 @@ Crie o arquivo `exemploHTML.html` com o exemplo de tabela de notas e teste no br
   </body>
 </html>
 ```
+
+<div align="right">
+
+[⬆️ Voltar ao topo](#menu-de-navegação)
+
+</div>
 
 ---
 
@@ -257,6 +300,12 @@ Atalhos para cores comuns; para outras, use código hexadecimal. Editores HTML g
   </body>
 </html>
 ```
+
+<div align="right">
+
+[⬆️ Voltar ao topo](#menu-de-navegação)
+
+</div>
 
 ---
 
@@ -372,6 +421,12 @@ Use `<!-- Comentário -->`.
   </ol>
 </ol>
 ```
+
+<div align="right">
+
+[⬆️ Voltar ao topo](#menu-de-navegação)
+
+</div>
 
 ---
 
@@ -489,6 +544,12 @@ Use `<!-- Comentário -->`.
 </form>
 ```
 
+<div align="right">
+
+[⬆️ Voltar ao topo](#menu-de-navegação)
+
+</div>
+
 ---
 
 ## Sons no HTML
@@ -557,6 +618,12 @@ Frames dividem a tela em quadros independentes, cada um como uma página HTML se
 
 Similar, mas com `cols="20%,80%"` e frames aninhados diferentemente.
 
+<div align="right">
+
+[⬆️ Voltar ao topo](#menu-de-navegação)
+
+</div>
+
 ---
 
 ## Referências e Ferramentas
@@ -568,3 +635,30 @@ Similar, mas com `cols="20%,80%"` e frames aninhados diferentemente.
   - https://color.adobe.com/pt/create/color-wheel
 - **Site para testar HTML online:** https://jsfiddle.net/
 - **Caracteres especiais:** http://www.ic.unicamp.br/~hans/lite/html.html#acentuacao
+
+---
+
+## 📫 Contato
+
+<div align="center">
+
+<a href="mailto:cardosofiles@outlook.com">
+  <img src="https://img.shields.io/badge/Email-0078D4?style=for-the-badge&logo=microsoftoutlook&logoColor=white" alt="Email"/>
+</a>
+<a href="https://www.linkedin.com/in/joaobatista-dev/" target="_blank">
+  <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+</a>
+<a href="https://github.com/Cardosofiles" target="_blank">
+  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
+</a>
+<a href="https://cardosofiles.dev/" target="_blank">
+  <img src="https://img.shields.io/badge/Portfólio-222222?style=for-the-badge&logo=about.me&logoColor=white" alt="Portfólio"/>
+</a>
+
+</div>
+
+---
+
+<div align="center">
+  <i>⭐ Marque meus repositórios com uma estrela se você os achar interessantes!</i>
+</div>
