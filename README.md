@@ -1,4 +1,4 @@
-# 🌐 Programação para a Internet - Unitri
+# 🌐 Programação para a Internet
 
 <div align="center">
 
