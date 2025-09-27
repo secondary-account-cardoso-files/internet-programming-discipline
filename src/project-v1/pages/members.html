@@ -1,0 +1,69 @@
+<div>
+  <h2>Nosso Time</h2>
+  <!-- Colaboradores do projeto -->
+  <div id="collaborators" class="collab-grid">
+    <!-- Renderizado via JS -->
+  </div>
+
+  <div>
+    <h1>Programação para a Internet</h1>
+    <a
+      href="https://www.linkedin.com/in/luciene-chagas-de-oliveira-ph-d-b21b3b31/"
+      target="_blank"
+      >Luciene Chagas de Oliveira, Ph.D
+    </a>
+  </div>
+</div>
+
+<style>
+  /* Estilo para a grade de colaboradores (maior para preencher o espaço) */
+  .collab-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+    margin-top: 1.5rem;
+  }
+
+  .collab-card {
+    background: #f9fafb;
+    border-radius: 12px;
+    padding: 22px;
+    text-align: center;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .collab-avatar {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    margin-bottom: 0.75rem;
+    object-fit: cover;
+  }
+
+  .collab-name {
+    font-weight: 600;
+    color: #111827;
+    margin: 0.25rem 0 0.1rem 0;
+    font-size: 1.15rem;
+  }
+
+  .collab-username {
+    font-size: 0.95rem;
+    color: #6b7280;
+  }
+
+  @media (max-width: 900px) {
+    .collab-grid {
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+  }
+  @media (max-width: 520px) {
+    .collab-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

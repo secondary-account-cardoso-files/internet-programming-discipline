@@ -1,0 +1,113 @@
+<div>
+  <style>
+    .tabela-clientes {
+      width: 100%;
+      max-width: 1000px;
+      margin: 20px auto;
+      border-collapse: collapse;
+      font-family: Arial, sans-serif;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .tabela-clientes thead {
+      background: #2b7cff;
+      color: #fff;
+      text-align: left;
+    }
+
+    .tabela-clientes th,
+    .tabela-clientes td {
+      padding: 12px 15px;
+      border-bottom: 1px solid #e0e6ed;
+      font-size: 14px;
+    }
+
+    .tabela-clientes tbody tr:nth-child(even) {
+      background: #f9faff;
+    }
+
+    .tabela-clientes tbody tr:hover {
+      background: #eef4ff;
+    }
+
+    .tabela-clientes th {
+      font-weight: bold;
+      font-size: 15px;
+    }
+
+    .tabela-clientes td {
+      color: #333;
+    }
+
+    /* Responsivo */
+    @media (max-width: 768px) {
+      .tabela-clientes thead {
+        display: none;
+      }
+
+      .tabela-clientes,
+      .tabela-clientes tbody,
+      .tabela-clientes tr,
+      .tabela-clientes td {
+        display: block;
+        width: 100%;
+      }
+
+      .tabela-clientes tr {
+        margin-bottom: 15px;
+        background: #fff;
+        border-radius: 6px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+      }
+
+      .tabela-clientes td {
+        text-align: right;
+        padding: 10px;
+        position: relative;
+      }
+
+      .tabela-clientes td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 12px;
+        color: #555;
+      }
+    }
+  </style>
+
+  <div id="table-container">
+    <!-- Conteúdo será renderizado pelo JavaScript via renderTablePage() -->
+  </div>
+</div>
+      tabela.innerHTML = ""; // Limpa a tabela antes de preencher
+
+      // Recupera os dados do localStorage
+      const usuarios = JSON.parse(localStorage.getItem("clientes")) || [];
+
+      // Preenche a tabela com os dados
+      usuarios.forEach((usuario) => {
+        const row = document.createElement("tr");
+        row.innerHTML = `
+          <td data-label="Nome Completo">${usuario.nome}</td>
+          <td data-label="CPF">${usuario.cpf}</td>
+          <td data-label="CEP">${usuario.cep}</td>
+          <td data-label="Rua">${usuario.rua}</td>
+          <td data-label="Número">${usuario.numero}</td>
+          <td data-label="Complemento">${usuario.complemento || ""}</td>
+          <td data-label="Cidade">${usuario.cidade}</td>
+          <td data-label="Estado">${usuario.estado}</td>
+          <td data-label="Data de Nascimento">${usuario.dataNascimento}</td>
+        `;
+        tabela.appendChild(row);
+      });
+    }
+
+    // Carrega a tabela quando o conteúdo da página for carregado
+    document.addEventListener("DOMContentLoaded", carregarTabela);
+  </script>
+</div>

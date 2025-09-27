@@ -11,7 +11,7 @@
 
   <body>
     <header>
-      <h1>Projeto V1 - Formulário de Cadastro</h1>
+      <h1>Projeto V1 - Disciplina de Programação para a Internet</h1>
     </header>
 
     <main class="grid-layout">
@@ -32,6 +32,27 @@
             >
           </li>
 
+          <li>
+            <!-- Link para tela de cadastro de usuário -->
+            <a href="#" onclick="loadPage('table.html'); return false;"
+              >Usuários Cadastrados</a
+            >
+          </li>
+
+          <li>
+            <!-- Link para tela de cadastro de usuário -->
+            <a href="#" onclick="loadPage('livros.html'); return false;"
+              >Livros</a
+            >
+          </li>
+
+          <li>
+            <!-- Link para tela de cadastro de usuário -->
+            <a href="#" onclick="loadPage('members.html'); return false;"
+              >Membros</a
+            >
+          </li>
+
           <!-- Adicione mais links aqui conforme novas páginas -->
         </ul>
       </nav>
@@ -41,12 +62,11 @@
       </section>
     </main>
 
-    <footer>
+    <!-- <footer>
       <!-- Rodapé do site -->
-    </footer>
+    <!-- </footer> -->
 
     <script>
-      // Garante que a página inicial seja exibida ao acessar
       document.addEventListener("DOMContentLoaded", function () {
         loadPage("inicio.html");
       });

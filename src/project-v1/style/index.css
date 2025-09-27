@@ -24,6 +24,25 @@ header {
   justify-content: center;
 }
 
+li {
+  list-style: none;
+  margin: 8px 0;
+  background-color: #222;
+  padding: 8px;
+  border-radius: 8%;
+  &:hover {
+    background-color: black;
+  }
+}
+
+li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  cursor: pointer;
+  display: block;
+}
+
 .grid-layout {
   display: grid;
   grid-template-columns: 15% 85%;
@@ -44,7 +63,7 @@ header {
 .grid-layout section {
   grid-column: 2;
   background: #fff;
-  padding: 32px 24px;
+  /* padding: 32px 24px; */
   min-width: 0;
   height: 100%;
   box-sizing: border-box;
@@ -251,6 +270,79 @@ button:hover {
 
 .rent-btn:hover {
   background: #1d4ed8;
+}
+
+.collab-grid {
+  margin-top: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 20px;
+  align-items: stretch;
+}
+
+.collab-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 22px;
+  text-align: center;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.collab-card img {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 12px auto;
+  border: 2px solid #e5e7eb;
+}
+
+.collab-card h4 {
+  margin: 6px 0 2px 0;
+  font-size: 1.15rem;
+  color: #111827;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.collab-card p {
+  margin: 0;
+  color: #6b7280;
+  font-size: 0.95rem;
+}
+
+.collab-card a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 6px 12px;
+  background: #2563eb;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.collab-card a:hover {
+  background: #1d4ed8;
+}
+
+/* Responsivo */
+@media (max-width: 900px) {
+  .collab-grid {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+}
+
+@media (max-width: 520px) {
+  .collab-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 600px) {

@@ -1,0 +1,307 @@
+<div>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #5a2d82;
+    }
+    .book-categories {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .book-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .book-card {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      padding: 15px;
+      text-align: center;
+      transition: transform 0.2s;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 370px;
+      justify-content: space-between;
+    }
+
+    .book-card:hover {
+      transform: scale(1.03);
+    }
+
+    .book-card-img,
+    .book-card img {
+      width: 140px;
+      height: 200px;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .book-card-img img,
+    .book-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 5px;
+      display: block;
+    }
+
+    .book-title {
+      margin: 10px 0;
+      font-weight: bold;
+      color: #444;
+      font-size: 1rem;
+      min-height: 2.6em;
+      max-height: 2.6em;
+      line-height: 1.3em;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      word-break: break-word;
+    }
+
+    .rent-button {
+      background-color: #5a2d82;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: auto;
+    }
+    .rent-button:hover {
+      background-color: #7a3dbb;
+    }
+  </style>
+  <main>
+    <h2>Aluguel de Livros</h2>
+    <nav class="book-categories">
+      <a href="#livros-fantasia">Fantasia</a>
+      <a href="#livros-tecnologia">Tecnologia</a>
+      <a href="#livros-filosofia">Filosofia</a>
+    </nav>
+    <section>
+      <!-- livros da categoria fantasia -->
+      <h2>Fantasia</h2>
+      <div id="livros-fantasia" class="book-grid">
+        <div class="book-card">
+          <img
+            src="https://m.media-amazon.com/images/I/61jgm6ooXzL._UF1000,1000_QL80_.jpg"
+            alt="Harry Potter e a Pedra Filosofal"
+          />
+          <p class="book-title">Harry Potter e a Pedra Filosofal</p>
+          <button class="rent-button">Alugar</button>
+        </div>
+        <div class="book-card">
+          <img
+            src="https://m.media-amazon.com/images/I/71NsVQ5MlwL._UF1000,1000_QL80_.jpg"
+            alt="Harry Potter e a Câmara Secreta"
+          />
+          <p class="book-title">Harry Potter e a Câmara Secreta</p>
+          <button class="rent-button">Alugar</button>
+        </div>
+        <div class="book-card">
+          <img
+            src="https://m.media-amazon.com/images/I/81QnqHwRiUL._UF1000,1000_QL80_.jpg"
+            alt="Harry Potter e o Prisioneiro de Azkaban"
+          />
+          <p class="book-title">Harry Potter e o Prisioneiro de Azkaban</p>
+          <button class="rent-button">Alugar</button>
+        </div>
+        <div class="book-card">
+          <img
+            src="https://images.dlivros.org/J-K-Rowling/harry-potter-calice-fogo-harry-potter-4-rowling_large.webp"
+            alt="Harry Potter e o Cálice de Fogo"
+          />
+          <p class="book-title">Harry Potter e o Cálice de Fogo</p>
+          <button class="rent-button">Alugar</button>
+        </div>
+        <div class="book-card">
+          <img
+            src="https://m.media-amazon.com/images/I/81RI+iGwPGL.jpg"
+            alt="Harry Potter e a Ordem da Fênix"
+          />
+          <p class="book-title">Harry Potter e a Ordem da Fênix</p>
+          <button class="rent-button">Alugar</button>
+        </div>
+        <div class="book-card">
+          <img
+            src="https://m.media-amazon.com/images/I/81-jvnt+hgL.UF1000,1000_QL80.jpg"
+            alt="Harry Potter e o Enigma do Príncipe"
+          />
+          <p class="book-title">Harry Potter e o Enigma do Príncipe</p>
+          <button class="rent-button">Alugar</button>
+        </div>
+        <div class="book-card">
+          <img
+            src="https://m.media-amazon.com/images/I/81PHloIwKnL.jpg"
+            alt="Harry Potter e as Relíquias da Morte"
+          />
+          <p class="book-title">Harry Potter e as Relíquias da Morte</p>
+          <button class="rent-button">Alugar</button>
+        </div>
+      </div>
+      <!-- livros da categoria tecnologia -->
+      <h2>Tecnologia</h2>
+      <div id="livros-tecnologia" class="book-grid">
+        <div class="book-card">
+          <img
+            src="https://m.media-amazon.com/images/I/71Vkg7GfPFL.SY385.jpg"
+            alt="Entendendo Algoritmos"
+          />
+          <p class="book-title">Entendendo Algoritmos</p>
+          <button class="rent-button">Alugar</button>
+        </div>
+        <div class="book-card">
+          <img
+            src="https://m.media-amazon.com/images/I/41aHzYSXZkL.SY445_SX342_ControlCacheEqualizer.jpg"
+            alt="Código Limpo: Habilidades Práticas do Agile Software"
+          />
+          <p class="book-title">
+            Código Limpo: Habilidades Práticas do Agile Software
+          </p>
+          <button class="rent-button">Alugar</button>
+        </div>
+        <div class="book-card">
+          <img
+            src="https://m.media-amazon.com/images/I/41WH7HFsbzL.SY445_SX342_ControlCacheEqualizer.jpg"
+            alt="O Programador Pragmático: De Aprendiz a Mestre"
+          />
+          <p class="book-title">
+            O Programador Pragmático: De Aprendiz a Mestre
+          </p>
+          <button class="rent-button">Alugar</button>
+        </div>
+        <div class="book-card">
+          <img
+            src="https://m.media-amazon.com/images/I/71rxdaudNPL.SY385.jpg"
+            alt="Black Hat Python – 2ª Edição: Programação Python para hackers e pentesters"
+          />
+          <p class="book-title">
+            Black Hat Python – 2ª Edição: Programação Python para hackers e
+            pentesters
+          </p>
+          <button class="rent-button">Alugar</button>
+        </div>
+        <div class="book-card">
+          <img
+            src="https://m.media-amazon.com/images/I/71l0TYj1mpL.SY425.jpg"
+            alt="Aprenda Programação Funcional: Como Pensar Funcionalmente Para Trabalhar com Códigos Complexos"
+          />
+          <p class="book-title">
+            Aprenda Programação Funcional: Como Pensar Funcionalmente Para
+            Trabalhar com Códigos Complexos
+          </p>
+          <button class="rent-button">Alugar</button>
+        </div>
+        <div class="book-card">
+          <img
+            src="https://m.media-amazon.com/images/I/71OO2NCFqlL.SY425.jpg"
+            alt="Use a Cabeça c#: Guia do Aprendiz Para Programação Real com c# e .net Core"
+          />
+          <p class="book-title">
+            Use a Cabeça c#: Guia do Aprendiz Para Programação Real com c# e
+            .net Core
+          </p>
+          <button class="rent-button">Alugar</button>
+        </div>
+        <div class="book-card">
+          <img
+            src="https://m.media-amazon.com/images/I/71X7hMhMEUL.SY385.jpg"
+            alt="Lógica de Programação e Algoritmos com Javascript - 2ª Edição"
+          />
+          <p class="book-title">
+            Lógica de Programação e Algoritmos com Javascript - 2ª Edição
+          </p>
+          <button class="rent-button">Alugar</button>
+        </div>
+      </div>
+      <!-- livros da categoria filosofia -->
+      <h2>Filosofia</h2>
+      <div id="livros-filosofia" class="book-grid">
+        <div class="book-card">
+          <img
+            src="https://m.media-amazon.com/images/I/51r-caT7odL.SY445_SX342_ControlCacheEqualizer.jpg"
+            alt="A República"
+          />
+          <p class="book-title">A República</p>
+          <button class="rent-button">Alugar</button>
+        </div>
+        <div class="book-card">
+          <img
+            src="https://m.media-amazon.com/images/I/91hv2cST8ZL.SY425.jpg"
+            alt="O Mito da Caverna"
+          />
+          <p class="book-title">O Mito da Caverna</p>
+          <button class="rent-button">Alugar</button>
+        </div>
+        <div class="book-card">
+          <img
+            src="https://m.media-amazon.com/images/I/71-ghLb8qML.SY425.jpg"
+            alt="Sapiens (Nova edição): Uma breve história da humanidade"
+          />
+          <p class="book-title">
+            Sapiens (Nova edição): Uma breve história da humanidade
+          </p>
+          <button class="rent-button">Alugar</button>
+        </div>
+        <div class="book-card">
+          <img
+            src="https://m.media-amazon.com/images/I/41vcWMfhzJL.SY445_SX342_ControlCacheEqualizer.jpg"
+            alt="Sobre a brevidade da vida: Edição Bilíngue com postal + marcador (Coleção Grandes Mestres do Estoicismo)"
+          />
+          <p class="book-title">
+            Sobre a brevidade da vida: Edição Bilíngue com postal + marcador
+            (Coleção Grandes Mestres do Estoicismo)
+          </p>
+          <button class="rent-button">Alugar</button>
+        </div>
+        <div class="book-card">
+          <img
+            src="https://m.media-amazon.com/images/I/617iS--XOQL.SY342.jpg"
+            alt="As 48 leis do poder"
+          />
+          <p class="book-title">As 48 leis do poder</p>
+          <button class="rent-button">Alugar</button>
+        </div>
+        <div class="book-card">
+          <img
+            src="https://m.media-amazon.com/images/I/61ek-arBPTL.SY425.jpg"
+            alt="Freud e o inconsciente"
+          />
+          <p class="book-title">Freud e o inconsciente</p>
+          <button class="rent-button">Alugar</button>
+        </div>
+        <div class="book-card">
+          <img
+            src="https://m.media-amazon.com/images/I/71efC7HuPjL.SY466.jpg"
+            alt="Discurso do Método"
+          />
+          <p class="book-title">Discurso do Método</p>
+          <button class="rent-button">Alugar</button>
+        </div>
+      </div>
+    </section>
+      
+  </main>
+</div>
