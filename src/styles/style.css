@@ -307,20 +307,3 @@ html {
 .exercise03 td:nth-child(3):has-text("4") {
   color: #ff4444 !important;
 }
-
-/* Notas >= 6 = verde */
-/* .exercise03 td:nth-child(2):has-text("5"),
-.exercise03 td:nth-child(2):has-text("6"),
-.exercise03 td:nth-child(2):has-text("7"),
-.exercise03 td:nth-child(2):has-text("8"),
-.exercise03 td:nth-child(2):has-text("9"),
-.exercise03 td:nth-child(2):has-text("10"),
-.exercise03 td:nth-child(3):has-text("5"),
-.exercise03 td:nth-child(3):has-text("6"),
-.exercise03 td:nth-child(3):has-text("7"),
-.exercise03 td:nth-child(3):has-text("8"),
-.exercise03 td:nth-child(3):has-text("9"),
-.exercise03 td:nth-child(3):has-text("10") {
-  color: #22aa22 !important;
-  background-color: #e6ffe6 !important;
-} */
