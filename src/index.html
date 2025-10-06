@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+< lang="pt-BR">
   <head>
     <title>Programação para Internet - Exercícios</title>
     <meta charset="UTF-8" />
@@ -224,70 +224,599 @@
       <section id="exercise11" class="exercise11">
         <div>
           <h2>Exercício 11</h2>
-          <p>Em desenvolvimento...</p>
+          <div class="container">
+            <h1>Escola — Formulário de Pré-Matrícula</h1>
+
+            <form
+              action="#"
+              method="post"
+              id="preMatricula"
+              name="preMatricula"
+              autocomplete="off"
+            >
+              <fieldset>
+                <legend>Dados Pessoais</legend>
+                <div class="row">
+                  <div class="col">
+                    <label for="nome">Nome do Aluno</label>
+                    <input
+                      type="text"
+                      id="nome"
+                      name="nome"
+                      placeholder="Nome completo"
+                      required
+                    />
+                  </div>
+
+                  <div class="col small">
+                    <label for="nascimento">Nascimento dd/mm/aaaa</label>
+                    <input
+                      type="text"
+                      id="nascimento"
+                      name="nascimento"
+                      placeholder="dd/mm/aaaa"
+                      pattern="\d{2}/\d{2}/\d{4}"
+                    />
+                    <span class="note">Formato dd/mm/aaaa</span>
+                  </div>
+
+                  <div class="col">
+                    <label for="mae">Nome da Mãe</label>
+                    <input
+                      type="text"
+                      id="mae"
+                      name="mae"
+                      placeholder="Nome da mãe"
+                    />
+                  </div>
+
+                  <div class="col">
+                    <label for="pai">Nome do Pai</label>
+                    <input
+                      type="text"
+                      id="pai"
+                      name="pai"
+                      placeholder="Nome do pai"
+                    />
+                  </div>
+                </div>
+
+                <div class="row" style="margin-top: 10px">
+                  <div class="col small">
+                    <label for="ddd">Telefone DDD</label>
+                    <input
+                      type="tel"
+                      id="ddd"
+                      name="ddd"
+                      class="small"
+                      placeholder="DDD"
+                      pattern="\d{2}"
+                    />
+                  </div>
+
+                  <div class="col">
+                    <label for="tel">Tel</label>
+                    <input
+                      type="tel"
+                      id="tel"
+                      name="tel"
+                      placeholder="Número de telefone"
+                    />
+                  </div>
+
+                  <div class="col small">
+                    <label for="ramal">Ramal</label>
+                    <input
+                      type="text"
+                      id="ramal"
+                      name="ramal"
+                      placeholder="Ramal"
+                    />
+                  </div>
+
+                  <div class="col">
+                    <label for="email">E-Mail</label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      placeholder="seu@email.com"
+                    />
+                  </div>
+                </div>
+              </fieldset>
+
+              <fieldset>
+                <legend>Informações da Escola</legend>
+                <div class="row">
+                  <div class="col">
+                    <label for="serie">Série</label>
+                    <select id="serie" name="serie">
+                      <option value="pre-escolar" selected>pré-escolar</option>
+                      <option value="1o">1º ano</option>
+                      <option value="2o">2º ano</option>
+                      <option value="3o">3º ano</option>
+                      <option value="4o">4º ano</option>
+                      <option value="5o">5º ano</option>
+                    </select>
+                  </div>
+
+                  <div class="col">
+                    <label>Turno</label>
+                    <div class="radios" role="radiogroup" aria-label="Turno">
+                      <label
+                        ><input
+                          type="radio"
+                          name="turno"
+                          value="manha"
+                          checked
+                        />
+                        Manhã</label
+                      >
+                      <label
+                        ><input type="radio" name="turno" value="tarde" />
+                        Tarde</label
+                      >
+                      <label
+                        ><input type="radio" name="turno" value="noite" />
+                        Noite</label
+                      >
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+
+              <fieldset>
+                <legend>Atividades Extracurriculares</legend>
+                <div class="checkboxes">
+                  <label
+                    ><input
+                      type="checkbox"
+                      name="atividades"
+                      value="informatica"
+                    />
+                    Informática</label
+                  >
+                  <label
+                    ><input type="checkbox" name="atividades" value="musica" />
+                    Música</label
+                  >
+                  <label
+                    ><input type="checkbox" name="atividades" value="balet" />
+                    Balet</label
+                  >
+                  <label
+                    ><input type="checkbox" name="atividades" value="pintura" />
+                    Pintura</label
+                  >
+                  <label
+                    ><input type="checkbox" name="atividades" value="judo" />
+                    Judô</label
+                  >
+                  <label
+                    ><input type="checkbox" name="atividades" value="futebol" />
+                    Futebol</label
+                  >
+                </div>
+              </fieldset>
+
+              <div class="actions">
+                <input type="submit" value="Enviar Formulário" class="submit-button" />
+                <input type="reset" value="Limpar Campos" class="reset-button" />
+              </div>
+            </form>
+          </div>
         </div>
       </section>
 
       <section id="exercise12" class="exercise12">
         <div>
           <h2>Exercício 12</h2>
-          <p>Em desenvolvimento...</p>
-        </div>
+              <a href="#main" class="skip-link">Pular para o conteúdo</a>
+
+              <header>
+                <h1>Catálogo de Tags HTML</h1>
+                <nav>
+                  <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="forms.html">Formulários</a></li>
+                    <li><a href="media.html">Mídia</a></li>
+                    <li><a href="#examples">Exemplos</a></li>
+                  </ul>
+                </nav>
+              </header>
+
+              <main id="main">
+                <section id="intro">
+                  <h2>Introdução</h2>
+                  <p>
+                    Esta página demonstra muitos elementos HTML, atributos e
+                    pequenas amostras de uso.
+                  </p>
+                  <p>
+                    Referência sobre elementos de link e atributos: consulte a
+                    documentação técnica indicada.
+                  </p>
+                </section>
+
+                <section id="text-structure">
+                  <h2>Estrutura de texto</h2>
+                  <article>
+                    <h3>Cabeçalhos e parágrafos</h3>
+                    <p>
+                      Parágrafo normal com <strong>strong</strong>, <em>em</em>,
+                      <mark>mark</mark>, <small>small</small>,
+                      <abbr title="Exemplo">abbr</abbr>.
+                    </p>
+                    <h4>Lista ordenada</h4>
+                    <ol>
+                      <li>Item 1</li>
+                      <li>
+                        Item 2
+                        <ul>
+                          <li>Subitem A</li>
+                        </ul>
+                      </li>
+                    </ol>
+                    <h4>Definições e citações</h4>
+                    <dl>
+                      <dt>Termo</dt>
+                      <dd>Definição do termo</dd>
+                    </dl>
+                    <blockquote cite="https://example.com">
+                      Exemplo de citação em bloco.
+                    </blockquote>
+                  </article>
+                </section>
+
+                <section id="links-media">
+                  <h2>Links e mídia</h2>
+                  <p>
+                    Link normal:
+                    <a
+                      href="https://www.example.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Example (nova aba)</a
+                    >.
+                  </p>
+                  <p>
+                    Link para email:
+                    <a href="mailto:aluno@exemplo.com">Enviar email</a>.
+                  </p>
+                  <p>
+                    Telefone:
+                    <a href="tel:+5511999999999">+55 11 99999-9999</a>.
+                  </p>
+
+                  <figure>
+                    <img
+                      src="placeholder.png"
+                      alt="Imagem de exemplo"
+                      width="240"
+                      height="160"
+                    />
+                    <figcaption>Figura com legenda</figcaption>
+                  </figure>
+
+                  <video controls width="320">
+                    <source src="video.mp4" type="video/mp4" />
+                    Seu navegador não suporta vídeo.
+                  </video>
+
+                  <audio controls>
+                    <source src="audio.ogg" type="audio/ogg" />
+                    Seu navegador não suporta áudio.
+                  </audio>
+                </section>
+
+                <section id="tables">
+                  <h2>Tabelas</h2>
+                  <table>
+                    <caption>
+                      Tabela simples
+                    </caption>
+                    <thead>
+                      <tr>
+                        <th>Nome</th>
+                        <th>Idade</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Marcos</td>
+                        <td>18</td>
+                      </tr>
+                    </tbody>
+                    <tfoot>
+                      <tr>
+                        <td colspan="2">Fim da tabela</td>
+                      </tr>
+                    </tfoot>
+                  </table>
+                </section>
+
+                <section id="forms">
+                  <h2>Formulários (resumo)</h2>
+                  <form action="#" method="post" id="demoForm">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required />
+
+                    <label for="nasc">Nascimento:</label>
+                    <input type="date" id="nasc" name="nasc" />
+
+                    <label>Série:</label>
+                    <select name="serie" id="serie">
+                      <option value="pre-escolar" selected>pré-escolar</option>
+                      <option value="1">1º ano</option>
+                    </select>
+
+                    <fieldset>
+                      <legend>Turno</legend>
+                      <label
+                        ><input
+                          type="radio"
+                          name="turno"
+                          value="manha"
+                          checked
+                        />
+                        Manhã</label
+                      >
+                      <label
+                        ><input type="radio" name="turno" value="tarde" />
+                        Tarde</label
+                      >
+                    </fieldset>
+
+                    <fieldset>
+                      <legend>Atividades</legend>
+                      <label
+                        ><input
+                          type="checkbox"
+                          name="atividades"
+                          value="informatica"
+                        />
+                        Informática</label
+                      >
+                      <label
+                        ><input
+                          type="checkbox"
+                          name="atividades"
+                          value="musica"
+                        />
+                        Música</label
+                      >
+                    </fieldset>
+
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" name="mensagem" rows="4"></textarea>
+
+                    <label for="arquivo">Arquivo</label>
+                    <input type="file" id="arquivo" name="arquivo" />
+
+                    <div class="actions">
+                      <button type="submit" id="btnEnviar" class="btn-primary">
+                        Envia Formulário
+                      </button>
+                      <input type="reset" value="Limpa Campos" />
+                    </div>
+                  </form>
+                </section>
+
+                <section id="semantic">
+                  <h2>Elementos semânticos e de seção</h2>
+                  <header>
+                    <h3>Header dentro de section</h3>
+                  </header>
+                  <nav aria-label="paginacao">
+                    <a href="#intro">Intro</a> |
+                    <a href="#forms">Forms</a>
+                  </nav>
+                  <aside>
+                    <h4>Aside</h4>
+                    <p>Conteúdo lateral</p>
+                  </aside>
+                  <footer>
+                    <p>Rodapé da seção</p>
+                  </footer>
+                </section>
+
+                <section id="interactive">
+                  <h2>Elementos interativos e script</h2>
+                  <button id="btnDemo">Clique</button>
+                  <progress id="prog" value="30" max="100">30%</progress>
+                  <meter value="0.6">60%</meter>
+                  <details>
+                    <summary>Mais detalhes</summary>
+                    <p>Conteúdo oculto inicialmente</p>
+                  </details>
+                  <dialog id="dlg">
+                    Diálogo de exemplo <button id="closeDlg">Fechar</button>
+                  </dialog>
+                </section>
+
+                <section id="examples">
+                  <h2>Exemplos avançados</h2>
+                  <canvas id="canvas" width="300" height="120"
+                    >Canvas não suportado</canvas
+                  >
+                  <iframe
+                    src="about:blank"
+                    title="Exemplo de iframe"
+                    width="300"
+                    height="120"
+                  ></iframe>
+                  <template id="tpl"><p>Modelo instanciado via JS</p></template>
+                </section>
+              </main>
+
+              <footer>
+                <p>Exemplo didático de tags HTML</p>
+              </footer>
+
+          </div>
       </section>
 
       <section id="exercise13" class="exercise13">
         <div>
           <h2>Exercício 13</h2>
-          <p>Em desenvolvimento...</p>
+          <head>
+            <title>Meu primeiro Style sheet</title>
+          </head>
+          <body>
+            <h1>Meu primeiro Style Sheet</h1>
+            <p>Agora o utilizarei para estilos e formatação das páginas!</p>
+          </body>
         </div>
       </section>
 
       <section id="exercise14" class="exercise14">
         <div>
           <h2>Exercício 14</h2>
-          <p>Em desenvolvimento...</p>
+
+  <style>
+    /* Links */
+    a {
+      color: #800000;
+      font-size: 8pt;
+      text-decoration: none;
+    }
+    a:hover {
+      color: #800080;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    /* Cabeçalhos */
+    h1 {
+      font-size: x-large;
+      color: red;
+      margin: 0.5em 0;
+    }
+    h2 {
+      font-size: large;
+      color: blue;
+      margin: 0.4em 0;
+    }
+
+    /* Parágrafos */
+    p {
+      font-family: "Times New Roman", Times, serif;
+      font-size: 12pt;
+      color: blue;
+      text-indent: 0.5in;
+      margin: 0.5em 0;
+    }
+  </style>
+  <h1>Exemplo H1</h1>
+  <h2>Exemplo H2</h2>
+
+  <p>Este é um parágrafo de exemplo com fonte Times, 12 pontos, cor azul e recuo de meia polegada.</p>
+
+  <p>Veja um link de exemplo: <a href="#">link exemplo</a> — passe o mouse para ver o estilo hover.</p>
+
         </div>
       </section>
 
       <section id="exercise15" class="exercise15">
         <div>
           <h2>Exercício 15</h2>
-          <p>Em desenvolvimento...</p>
+          <h3>Exemplos de CSS vistos em sala de aula</h3>
+          <div class="example">
+            <h4>Exemplo de Transição</h4>
+            <button class="anim-btn">Passe o mouse</button>
+          </div>
+          <div class="example">
+            <h4>Exemplo de Grid</h4>
+            <div class="grid-example">
+              <div>1</div>
+              <div>2</div>
+              <div>3</div>
+              <div>4</div>
+            </div>
+          </div>
+
+          <h3>Exemplos do W3Schools</h3>
+          <div class="example">
+            <h4>Exemplo de Bordas</h4>
+            <div class="border-example">Exemplo de borda estilizada</div>
+          </div>
+          <div class="example">
+            <h4>Exemplo de Gradiente</h4>
+            <div class="bg-example">Exemplo de gradiente</div>
+          </div>
         </div>
       </section>
 
       <section id="exercise16" class="exercise16">
         <div>
           <h2>Exercício 16</h2>
-          <p>Em desenvolvimento...</p>
+          <p>Explore o <a href="./pages/personal-website/index.html">meu site pessoal</a> com várias páginas interligadas e estilizadas!</p>
         </div>
       </section>
 
       <section id="exercise17" class="exercise17">
         <div>
           <h2>Exercício 17</h2>
-          <p>Em desenvolvimento...</p>
+          <p>Clique no botão abaixo para somar dois números:</p>
+          <button onclick="somarNumeros()">Somar 2 Inteiros</button>
+          <script>
+            function somarNumeros() {
+              const numero1 = 5; // Altere para o valor desejado
+              const numero2 = 3; // Altere para o valor desejado
+              alert(numero1 + numero2);
+            }
+          </script>
         </div>
       </section>
 
       <section id="exercise18" class="exercise18">
         <div>
           <h2>Exercício 18</h2>
-          <p>Em desenvolvimento...</p>
+          <p>Digite algo no campo abaixo e clique no botão para exibir o conteúdo:</p>
+          <input type="text" id="clickMe" class="click-me" placeholder="Digite algo...">
+          <button onclick="exibirConteudo()">Exibir Conteúdo</button>
+          <script>
+            function exibirConteudo() {
+              const conteudo = document.getElementById('clickMe').value;
+              alert(conteudo);
+            }
+          </script>
         </div>
       </section>
 
       <section id="exercise19" class="exercise19">
         <div>
           <h2>Exercício 19</h2>
-          <p>Em desenvolvimento...</p>
+          <p>Digite algo no campo abaixo e clique no botão para exibir a quantidade de letras:</p>
+          <input type="text" id="textInput" class="text-input" placeholder="Digite algo...">
+          <button onclick="contarLetras()">Contar Letras</button>
+          <script>
+            function contarLetras() {
+              const texto = document.getElementById('textInput').value;
+              const quantidadeLetras = texto.replace(/\s+/g, '').length; // Remove espaços e conta letras
+              alert(`O texto contém ${quantidadeLetras} letras.`);
+            }
+          </script>
         </div>
       </section>
 
       <section id="exercise20" class="exercise20">
         <div>
           <h2>Exercício 20</h2>
-          <p>Em desenvolvimento...</p>
+          <p>Calculadora Simples</p>
+          <div class="calculator">
+            <input type="number" id="num1" class="calc-input" placeholder="Número 1">
+            <input type="number" id="num2" class="calc-input" placeholder="Número 2">
+            <div class="calc-buttons">
+              <button onclick="calcular('soma')">Somar</button>
+              <button onclick="calcular('subtracao')">Subtrair</button>
+              <button onclick="calcular('multiplicacao')">Multiplicar</button>
+              <button onclick="calcular('divisao')">Dividir</button>
+            </div>
+            <p id="resultado" class="calc-result">Resultado: </p>
+          </div>
+          <script src="./scrips/calculator.js"></script>
         </div>
       </section>
 
