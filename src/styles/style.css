@@ -328,13 +328,13 @@ html {
     color: var(--text);
   }
   .container {
-    max-width: 780px;
+    max-width: 1200px;
     margin: 0 auto;
-    background: var(--card);
-    border: 1px solid var(--border);
-    padding: 18px;
-    border-radius: 6px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+    padding: 16px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   h1 {
     margin-top: 0;
@@ -391,8 +391,11 @@ html {
     font-weight: 600;
   }
   input[type="submit"] {
-    background: var(--primary);
-    color: #fff;
+    padding: 8px 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
   }
   input[type="reset"] {
     background: #e0e0e0;
@@ -454,51 +457,58 @@ html {
     text-decoration: none;
   }
   .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 16px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
-  section {
-    background: #fff;
-    margin: 12px 0;
-    padding: 12px;
-    border: 1px solid #e6e6e6;
-    border-radius: 4px;
-  }
-  table {
-    border-collapse: collapse;
-    width: 100%;
-  }
-  table,
-  th,
-  td {
-    border: 1px solid #ccc;
-    padding: 6px;
-  }
-  .actions {
-    display: flex;
-    gap: 8px;
-    margin-top: 8px;
-  }
-  .btn-primary {
-    background: var(--primary);
-    color: #fff;
-    border: none;
-    padding: 8px 12px;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  .skip-link {
-    position: absolute;
-    left: -999px;
-    top: auto;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-  }
-  .skip-link:focus {
-    position: static;
-    left: auto;
-    width: auto;
-    height: auto;
-  }
+}
+section {
+  background: #fff;
+  margin: 12px 0;
+  padding: 12px;
+  border: 1px solid #e6e6e6;
+  border-radius: 4px;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+table,
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 6px;
+}
+.actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+.btn-primary {
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.skip-link:focus {
+  position: static;
+  left: auto;
+  width: auto;
+  height: auto;
 }
 
 .exercise13 {
