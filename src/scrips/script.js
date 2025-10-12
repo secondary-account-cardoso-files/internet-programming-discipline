@@ -27,3 +27,4 @@ document.addEventListener("DOMContentLoaded", function () {
     alert("Formulário enviado com sucesso (simulação).");
   });
 });
+
