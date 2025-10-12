@@ -11,3 +11,5 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
+
+document.getElementById("exercise01"), function (a, b) {};

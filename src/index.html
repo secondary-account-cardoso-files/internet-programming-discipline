@@ -7,7 +7,7 @@
 
     <link rel="stylesheet" href="./styles/style.css" />
 
-    <script src="./scrips/script.js"></script>
+    <script src="./scripts/script.js"></script>
   </head>
 
   <body style="background-color: #f5f5f5">
@@ -172,52 +172,384 @@
         </div>
       </section>
 
-      <section id="exercise04" class="exercise04">
-        <div>
-          <h2>Exercício 4</h2>
-          <p>Em desenvolvimento...</p>
+      <section id="exercise04" class="exercise04" styles="display: grid">
+        <div class="item" style="display: grid">
+          <h1>MENU</h1>
+          <span
+            style="
+              display: block;
+              height: 16px;
+              width: 100%;
+              background-color: #d3d3d3;
+            "
+          ></span>
+          <ul>
+            <li><a href="#">Exercício 1</a></li>
+            <li><a href="#">Exercício 2</a></li>
+            <li><a href="#">Exercício 3</a></li>
+          </ul>
+        </div>
+        <div class="item">
+          <h1>CURSO DE HTML</h1>
         </div>
       </section>
 
       <section id="exercise05" class="exercise05">
         <div>
           <h2>Exercício 5</h2>
-          <p>Em desenvolvimento...</p>
+          <table align="center" border="1" cellspacing="0">
+            <tr>
+              <th colspan="1">Horário</th>
+              <th colspan="1">Segunda</th>
+              <th colspan="1">Terça</th>
+              <th colspan="1">Quarta</th>
+              <th colspan="1">Quinta</th>
+              <th colspan="1">Sexta</th>
+            </tr>
+            <tr>
+              <td>19:15 - 20:05</td>
+              <td>Eng. de Software</td>
+              <td>Prog. para Internet</td>
+              <td>Linguagens e Pesquisa</td>
+              <td>Rede de Comp.</td>
+              <td>Lógica de Prog. e Algoritmo</td>
+            </tr>
+            <tr>
+              <td>20:05 - 20:55</td>
+              <td>Eng. de Software</td>
+              <td>Prog. para Internet</td>
+              <td>Linguagens e Pesquisa</td>
+              <td>Rede de Comp.</td>
+              <td>Lógica de Prog. e Algoritmo</td>
+            </tr>
+            <tr>
+              <td>21:10 - 22:00</td>
+              <td>Eng. de Software</td>
+              <td>Prog. para Internet</td>
+              <td>Linguagens e Pesquisa</td>
+              <td>Rede de Comp.</td>
+              <td>Lógica de Prog. e Algoritmo</td>
+            </tr>
+          </table>
         </div>
       </section>
 
       <section id="exercise06" class="exercise06">
         <div>
           <h2>Exercício 6</h2>
-          <p>Em desenvolvimento...</p>
+          <div>
+            <table border="1" align="center" cellspacing="0" cellpadding="11">
+              <tr>
+                <th>Nome</th>
+                <th><input type="text" name="txtNome" /></th>
+              </tr>
+              <tr>
+                <th>Sexo:</th>
+                <th>
+                  <input type="radio" name="rdSexo" value="M" />Masculino &nbsp;
+                  <input type="radio" name="rdSexo" value="F" />Feminino
+                </th>
+              </tr>
+              <tr>
+                <th colspan="2">
+                  Escolaridade:
+                  <select name="cmdEscolaridade">
+                    <option value="1">1 Grau</option>
+                    <option value="2">2 Grau</option>
+                    <option value="3">Superior</option>
+                  </select>
+                </th>
+              </tr>
+            </table>
+          </div>
         </div>
       </section>
 
       <section id="exercise07" class="exercise07">
-        <div>
-          <h2>Exercício 7</h2>
-          <p>Em desenvolvimento...</p>
+        <div style="text-align: center">
+          <h2 style="color: #0a4a9b">Café Starbuzz</h2>
+          <p><strong>Cardápio</strong></p>
+          <div
+            style="
+              display: flex;
+              justify-content: center;
+              gap: 20px;
+              flex-wrap: wrap;
+            "
+          >
+            <a href="#">
+              <img
+                width="120"
+                height="120"
+                src="https://img.freepik.com/fotos-premium/cafe-com-leite-e-bonito-design_1286-320.jpg"
+                alt="Imagem Mistura da Casa"
+              />
+              <br />
+              <span>Mistura da Casa</span>
+            </a>
+
+            <a href="#">
+              <img
+                width="120"
+                height="120"
+                src="https://www.supremoarabica.com.br/wp-content/uploads/2019/05/como-fazer-cappuccino.jpg"
+                alt="Imagem Café Arábico com Leite"
+              />
+              <br />
+              <span>Café Arábico com Leite</span>
+            </a>
+
+            <a href="#">
+              <img
+                width="120"
+                height="120"
+                src="https://media.istockphoto.com/id/505168330/pt/foto/copo-de-caf%C3%A9-latte-cafecom-gr%C3%A3os-de-caf%C3%A9-e-paus-de-canela.jpg?s=612x612&w=0&k=20&c=SO8LoLtoftBKPG9ruXpmtJAw0ZCINWvaLIn83TRmy88="
+                alt="Imagem Cappuccino"
+              />
+              <br />
+              <span>Cappuccino</span>
+            </a>
+
+            <a href="#">
+              <img
+                width="120"
+                height="120"
+                src="https://s2.glbimg.com/hZ43ILvtJI0-Sv7OldnV4Vsyn9U=/620x455/e.glbimg.com/og/ed/f/original/2018/07/12/chai_com_sucralose.jpg"
+                alt="Imagem Chá Chai"
+              />
+              <br />
+              <span>Chá Chai</span>
+            </a>
+          </div>
         </div>
       </section>
 
       <section id="exercise08" class="exercise08">
         <div>
           <h2>Exercício 8</h2>
-          <p>Em desenvolvimento...</p>
+          <div>
+            <form>
+              <label for="nome">Nome:</label>
+              <input type="text" id="nome" name="nome" /><br /><br />
+
+              <label for="senha">Password:</label>
+              <input type="password" id="senha" name="senha" /><br /><br />
+
+              <fieldset>
+                <legend>Em qual moeda você prefere receber seu salário?</legend>
+                <input type="radio" id="real" name="moeda" value="Real" />
+                <label for="real">Real</label><br />
+                <input type="radio" id="dolar" name="moeda" value="Dolar" />
+                <label for="dolar">Dolar</label><br />
+                <input type="radio" id="euro" name="moeda" value="Euro" />
+                <label for="euro">Euro</label><br />
+                <input type="radio" id="yen" name="moeda" value="Yen" />
+                <label for="yen">Yen</label>
+              </fieldset>
+              <br />
+
+              <fieldset>
+                <legend>
+                  Quais das afirmações seguintes você considera verdadeiras?
+                </legend>
+                <input
+                  type="checkbox"
+                  id="boris"
+                  name="afirmacoes"
+                  value="Boris Yeltsin é abstêmio"
+                />
+                <label for="boris">O Boris Yeltsin é abstêmio</label><br />
+                <input
+                  type="checkbox"
+                  id="billclinton"
+                  name="afirmacoes"
+                  value="Bill Clinton é casto"
+                />
+                <label for="billclinton">O Bill Clinton é casto</label><br />
+                <input
+                  type="checkbox"
+                  id="billgates"
+                  name="afirmacoes"
+                  value="Bill Gates é pobre"
+                />
+                <label for="billgates">O Bill Gates é pobre</label><br />
+                <input
+                  type="checkbox"
+                  id="fernanda"
+                  name="afirmacoes"
+                  value="Fernanda Montenegro é péssima atriz"
+                />
+                <label for="fernanda"
+                  >A Fernanda Montenegro é péssima atriz</label
+                ><br />
+                <input
+                  type="checkbox"
+                  id="bibi"
+                  name="afirmacoes"
+                  value="Bibi Ferreira é uma deusa"
+                />
+                <label for="bibi">A Bibi Ferreira é uma deusa</label><br />
+                <input
+                  type="checkbox"
+                  id="linus"
+                  name="afirmacoes"
+                  value="Linus Torvalds não entende de programação"
+                />
+                <label for="linus"
+                  >O Linus Torvalds não entende de programação</label
+                >
+              </fieldset>
+              <br />
+
+              <label for="arquivo">Arquivo a enviar:</label>
+              <input type="file" id="arquivo" name="arquivo" /><br /><br />
+
+              <label for="times">Seus times favoritos:</label><br />
+              <select id="times" name="times" multiple size="4">
+                <option>Corinthians</option>
+                <option>Palmeiras</option>
+                <option>Santos</option>
+                <option>São Paulo</option>
+              </select>
+              <br /><br />
+
+              <label for="comentarios">Gostaria de fazer comentários?</label
+              ><br />
+              <textarea id="comentarios" name="comentarios" rows="4" cols="40">
+Faça aqui seu comentário aqui...</textarea
+              >
+              <br /><br />
+
+              <button type="submit">Mandar!</button>
+              <button type="reset">Limpa</button>
+            </form>
+          </div>
         </div>
       </section>
 
       <section id="exercise09" class="exercise09">
         <div>
           <h2>Exercício 9</h2>
-          <p>Em desenvolvimento...</p>
+          <div>
+            <form>
+              <table border="1" cellpadding="10">
+                <tr>
+                  <td><label for="numero">Número:</label></td>
+                  <td><input type="text" id="numero" name="numero" /></td>
+                </tr>
+                <tr>
+                  <td>Bandeira:</td>
+                  <td>
+                    <input
+                      type="radio"
+                      id="visa"
+                      name="bandeira"
+                      value="visa"
+                    />
+                    <label for="visa"
+                      ><img
+                        src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg"
+                        alt="Visa"
+                        width="60"
+                    /></label>
+
+                    <input
+                      type="radio"
+                      id="mastercard"
+                      name="bandeira"
+                      value="mastercard"
+                    />
+                    <label for="mastercard"
+                      ><img
+                        src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg"
+                        alt="MasterCard"
+                        width="60" /></label
+                    ><br />
+
+                    <input
+                      type="radio"
+                      id="amex"
+                      name="bandeira"
+                      value="amex"
+                    />
+                    <label for="amex"
+                      ><img
+                        src="https://upload.wikimedia.org/wikipedia/commons/3/30/American_Express_logo_%282018%29.svg"
+                        alt="American Express"
+                        width="60"
+                    /></label>
+                  </td>
+                </tr>
+                <tr>
+                  <td><label for="validade">Validade:</label></td>
+                  <td>
+                    <select id="validade" name="validade">
+                      <option value="2012">2012</option>
+                      <option value="2013">2013</option>
+                      <option value="2014">2014</option>
+                    </select>
+                  </td>
+                </tr>
+              </table>
+            </form>
+          </div>
         </div>
       </section>
 
       <section id="exercise10" class="exercise10">
         <div>
           <h2>Exercício 10</h2>
-          <p>Em desenvolvimento...</p>
+          <div>
+            <form>
+              <fieldset>
+                <legend>Informações do Aquário</legend>
+                <label>Ph do Aquário:</label><br />
+                <input type="radio" id="ph-acido" name="ph" value="Ácido" />
+                <label for="ph-acido">Ácido</label>
+                <input
+                  type="radio"
+                  id="ph-alcalino"
+                  name="ph"
+                  value="Alcalino"
+                />
+                <label for="ph-alcalino">Alcalino</label>
+                <br /><br />
+                <fieldset>
+                  <legend>Peixes</legend>
+                  <label for="quantidade">Quantidade:</label>
+                  <input
+                    type="text"
+                    id="quantidade"
+                    name="quantidade"
+                    size="4"
+                  />
+                  <br /><br />
+                  <label for="especie">Espécie:</label>
+                  <select id="especie" name="especie">
+                    <option>Espada</option>
+                    <option>Molinesia</option>
+                    <option>Plati</option>
+                  </select>
+                </fieldset>
+                <br />
+                <label>Outros:</label><br />
+                <input
+                  type="checkbox"
+                  id="pedras"
+                  name="outros"
+                  value="pedras"
+                />
+                <label for="pedras">pedras</label>
+                <input
+                  type="checkbox"
+                  id="plantas"
+                  name="outros"
+                  value="plantas"
+                />
+                <label for="plantas">plantas</label>
+              </fieldset>
+            </form>
+          </div>
         </div>
       </section>
 
